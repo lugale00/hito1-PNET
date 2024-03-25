@@ -1,0 +1,120 @@
+/*Cuerpo del Formulario*/
+.registro{
+    margin: auto;
+    margin-top: 2em;
+    padding: 1.5em;
+    padding-top: 0.2em;
+    width: 30em;
+    background: #FEE0B5;
+    border-radius: 1em;
+    font-family: "Caveat";
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    box-shadow: 7px 13px 1.2em #000;
+}
+
+/*Encabezado del Formulario*/
+.registro h2{
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+}
+
+/*Cada uno de los inputs del formulario*/
+.datos{
+    margin-left: -0.55em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    background-color: #FEE0B5;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: 2px dashed #602b2c;
+    font-family: "Arial";
+    font-size: 1.1em;
+}
+
+/*Cambia de color cuando estás escribiendo*/
+.datos:focus{
+    border: 2px solid #602b2c;
+    background: #fff;
+}
+
+/*Texto de términos y condiciones*/
+.registro p{
+    height: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 0.5em;
+}
+
+/*Enlace de términos y condiciones*/
+.registro a{
+    color: royalblue;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 0.5em;
+}
+
+/*Subraya términos y condiciones al pasar por el enlace*/
+.registro a:hover{
+    color: royalblue;
+    text-decoration: underline;
+}
+
+/*Botón de registrar*/
+.botones{
+    width: 7em;
+    height: 2em;
+    background: #fff;
+    border-radius: 1em;
+    border: dashed #F07476;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+/*El botón de registrar cambia de color cuando pasas por encima*/
+.botones:hover{
+    background: #F07476;
+}
+
+/*Etiquetas*/
+label{
+    font-size: 1.5em;
+}
+
+select{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    width: 4em;
+}
+
+/*Formato de la clase que se le da cuando los datos del formulario están correctos*/
+.correcto{
+    margin-left: -0.55em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    background-color: #FEE0B5;
+    padding: 0.5em;
+    border-radius: 1em;
+    font-family: "Arial";
+    font-size: 1.1em;
+    border: solid green;
+}
+
+/*Formato de la clase que se le da cuando los datos del formulario son incorrectos*/
+.incorrecto{
+    margin-left: -0.55em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    background-color: #FEE0B5;
+    padding: 0.5em;
+    border-radius: 1em;
+    font-family: "Arial";
+    font-size: 1.1em;
+    border: solid red;
+}

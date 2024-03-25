@@ -1,0 +1,89 @@
+/*Formato de cada elemento del carrusel*/
+.carrusel{ 
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background: #000;
+}
+
+/*Formato del carrusel*/
+.contenedor {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;/*Hacemos columnas iguales para las fotos*/
+    gap: 7px;
+    width: 100%;/*Ysamos porcentajes para que el carrusel ocupe todo el ancho de la página y toda la altura del inicio*/
+    height: 100%;
+    transition: all 400ms;
+    margin-top: 2em;
+}
+
+/*Cuando pasamos por el carrusel, todas las imágenes se vuelven grises*/
+.contenedor:hover .carrusel{
+    filter: grayscale(100%) opacity(24%);
+}
+
+.carrusel {
+    position: relative;
+    background: var(--img) center center; /*Declaramos la variable --img, donde añadiremos las imágenes desde el style de html*/
+    background-size: cover;
+    transition: all 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*La imagen sobre la que estamos se vuelve clara para resaltarla*/
+.contenedor .carrusel:hover {
+    filter: grayscale(0%) opacity(100%); 
+}
+
+/*La columna seleccionada se vuelve 3 veces más grande que el resto, para resaltarla, en cada uno de los casos.*/
+.contenedor:has(.c1:hover){
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+}
+
+.contenedor:has(.c2:hover){
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+}
+
+.contenedor:has(.c3:hover){
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+}
+
+.contenedor:has(.c4:hover){
+    grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+}
+
+.contenedor:has(.c5:hover){
+    grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+}
+
+.carrusel:nth-child(odd){
+    transform: translateY(-16px);
+}
+
+.carrusel:nth-child(even){
+    transform: translateY(16px);
+}
+
+.carrusel::after{ /*Creamos la animación para que aparezca el título de la película en la zona de abajo del cartel*/
+    content: attr(aria-label);
+    position: absolute;
+    bottom: 20px;
+    background: #000;
+    color: #fff;
+    padding: 10px 10px 10px 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    transform: translateY(60px);
+    opacity: 0;
+    transition: all 400ms;
+    text-align: center;
+}
+
+.carrusel:hover::after{ /*Cuando salimos del carrusel, este se vuelve a su forma original*/
+    transform: translateY(0);
+    opacity: 1;
+    transition-delay: 400ms;
+}

@@ -1,0 +1,9 @@
+/*Texto de confirmación*/
+body>p{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 6em;
+    color: #602B2C;
+    text-align: center;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--Archivo HTML - Lenguaje en Español-->
+<html lang="es">
+    <!--Título, etiquetas meta y carga de ficheros externos-->
+    <head>
+        <!--Título de la página-->
+        <title>CinESI Reserva</title> <!--Título de la Web-->
+        <meta charset="utf-8"> <!--Codificación especial de todos los caracteres de idiomas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Fuente-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+        <!--Estilos enlazados al archivo html-->
+        <link rel="stylesheet" href="estilos/plantilla.css">
+        <link rel="stylesheet" href="estilos/reserva.css">
+
+        <!--Scripts enlazados al archivo html-->
+        <script type="text/javascript" src="scripts/formulario.js"></script>
+    </head>
+    
+    <!--Cuerpo de la página HTML-->
+    <body>
+        <!--Cabecera de la Web-->
+        <header class="encabezado">
+            <!--Logotipo de la Empresa con un hipervínculo-->
+            <a href="index.html">
+                <img src="imagenes/logotipo_simplificado.png" alt="logotipo_simplificado_ESIn" height="160">
+            </a>
+            <div> <!--Estructura de la página en bloques-->
+                <h1>CinESI</h1> <!--Cabecera de la Web-->
+                <!--Menú de la página-->
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="cartelera.html">Cartelera</a>
+                    <a href="salas.html">Conócenos</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--Formulario de registro para la reserva-->
+        <form class="registro" id="registro" method="dialog">
+            <h2>Datos del cliente</h2>
+            <label for="nombre" class="text">Nombre</label> 
+            <input class="datos" type="text" name="nombre" id="nombre" placeholder="Introduzca su nombre" aria-label="nombre"> <!--Nombre-->
+            <label for="apellidos" class="text">Apellidos</label> 
+            <input class="datos" type="text" name="apellidos" id="apellidos" placeholder="Introduzca su/s apellido/s" aria-label="apellidos"> <!--Apellidos-->
+            <label for="correo" class="text">Correo Electrónico</label> 
+            <input class="datos" type="email" name="correo" id="correo" placeholder="Introduzca su correo electronico" aria-label="correo"> <!--Correo electrónico-->
+            <label for="numPersonas" class="text">Número de Personas</label> <!--Número de personas-->
+            <input class="datos" type="number" name="numPersonas" id="numPersonas" placeholder="Introduzca el número de personas (max 100 personas)" aria-label="numPersonas"> 
+            <label for="SalaReserva" class="text">Sala</label> <!--Sala-->
+                <select name="SalaReserva" id="SalaReserva"> <!--Seleccionar el tipo de sala a reservar-->
+                    <option>Normal</option>
+                    <option>Premium</option>
+                    <option>4DX</option>
+                </select>
+            <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+            <button class="botones" type="submit"> Registrar </button> <!--Botón para registrar el formulario-->
+        </form>
+
+        <!--Pie de Página-->
+        <footer>
+            <!--Logotipo de la Empresa-->
+            <a href="index.html">
+                <img src="imagenes/logotipo_simplificado.png" alt="logotipo_simplificado_ESIn" height="300">   
+            </a>
+            <!--Area de Contacto-->
+            <div>
+                <div>
+                    <h3>Grupo CinESI y asociados 2024&copy;</h3>                                               <!--Nombre de la Empresa-->
+                    <h4>Email:</h4>                                                                           <!--Correo-->
+                    <a href="mailto:atencionalcliente@cinesi.com">atencionalcliente@cinesi.com</a>
+                    <h4>Teléfono</h4>                                                                         <!--Teléfono de contacto-->
+                    <a href="tel:+34956158746">+34 956 15 87 46</a>
+                </div>
+                <div>
+                    <h4>Ubicación:</h4>                                                                       <!--Ubicación-->
+                    <a href="https://maps.app.goo.gl/bNjSzyZyaKUn5acM7">Avda. Universidad de Cádiz, nº10 </a>    
+                    <h4>CP 11519 Puerto Real, Cádiz</h4>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

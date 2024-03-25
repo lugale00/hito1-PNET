@@ -1,0 +1,78 @@
+/*Contenido de la página*/
+.contenido{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    align-content: center;
+    text-align: center;
+}
+
+/*Películas recomendadas*/
+.recomendaciones{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    border: none;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/*Encabezados*/
+h2{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+}
+
+/*Películas recomendadas - Color de fondo*/
+section>section{
+    margin-top: 3.5em;
+    background-color: #FEE0B5;
+    border: 0.2em dashed #F07476;
+}
+
+/*Texto de los enlaces*/
+a>p{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    color: #602B2C;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Formato de texto de los artículos*/
+article>p{
+    margin-top: -1.5em;
+    padding: 1em;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+    color: #602B2C;
+}
+
+/*Eliminar borde de las fotos de los enlaces de los artículos*/
+article>a>img{
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+h2{
+    color: #602B2C;
+    font-size: 4em;
+}
+
+/*Media Queries*/
+@media (max-width: 1000px)
+{
+    .recomendaciones{
+        display: grid;
+        grid-template-columns: 99%;
+        border: none;
+        padding: 0;
+        box-sizing: content-box;
+    }
+}

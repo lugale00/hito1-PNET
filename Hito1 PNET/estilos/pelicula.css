@@ -1,0 +1,146 @@
+/*Encabezados*/
+h2{
+    display: flex;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    color: #602B2C;
+}
+
+/*Primer encabezado*/
+h2:first-child{
+    font-size: 5em;
+    margin-left: 1em;
+}
+
+/*Encabezado de Seleccione un Horario*/
+#texto{
+    margin-left: 0;
+}
+
+/*Estructura de la página*/
+section>section{
+    text-align: center;
+}
+
+/*Contenedor del poster y el tráiler*/
+#presentacion{
+    margin: 3.75em;
+    padding: 2em;
+    margin-top: -2em;
+    margin-bottom: 0;
+    border-radius: 1em;
+    border: 2px dashed #F07476;
+    background-color: #FEE0B5
+}
+
+/*Video de YouTube*/
+iframe{
+    padding-left: 5em;
+    padding: 0;
+    margin-left: 5em;
+}
+
+/*Centrar el texto dentro de los artículos*/
+article{
+    text-align: center;
+}
+
+/*Formato de texto de los artículos*/
+article>p{
+    padding: 0.75em;
+    margin: 2em;
+    margin-top: -1em;
+    margin-bottom: 0;
+    border-radius: 1em;
+    border: 2px dashed #F07476;
+    background-color: #FEE0B5;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+
+/*Contenedor de la Selección de Horarios*/
+#selec_horario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Input y botones de los horarios*/
+#selec_horario>div{
+    padding-top: 2em;
+    border-radius: 1em;
+    border: 2px dashed #F07476;
+    background-color: #FEE0B5;
+}
+
+/*Input de la fecha*/
+#fecha{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5em;
+    border: 2px solid #602B2C;
+    color: #602B2C;
+    background-color: white;
+}
+
+/*Botones de selección de horas*/
+#horario>section{
+    display: grid;
+    grid-template-columns: 5em 5em 5em 5em ;
+    padding: 2em;
+    gap: 4em;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: -1.5em;
+}
+
+/*Título de cada sección de Selección de Horas*/
+#horario>p{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.5em;
+    text-decoration:underline;
+    color: #602B2C;
+}
+
+/*Botones de Selección de Horas*/
+.hora{
+    border: 2px solid #602B2C;
+    color: #602B2C;
+    background-color: white;
+    text-decoration: none;
+}
+
+/*Media Queries*/
+@media (max-width: 1500px)
+{
+    iframe{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 950px)
+{
+    #horario>section{
+        grid-template-columns: 5em 5em 5em ;
+    }
+    
+}
+
+@media (max-width: 700px)
+{
+    #horario>section{
+        grid-template-columns: 5em 5em;
+    }
+    
+}

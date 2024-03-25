@@ -1,0 +1,135 @@
+/*Encabezados*/
+h2{
+    display: flex;
+    align-items: flex-start;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 6em;
+    margin-top: 0.2em;
+    margin-bottom: 0.5em;
+    color: #602B2C;
+    margin-left: 0.7em;
+}
+
+/*Seleccione el día y fecha*/
+body>section{
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2.5em;
+    margin-top: -3em;
+}
+
+/*Texto: Seleccione el día*/
+section>p{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    color: #602B2C;
+    margin-right: 0.3em;
+}
+
+/*Fecha*/
+#fecha{
+    margin-bottom: 1em;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+    border: 2px solid #602B2C;
+    color: #602B2C;
+    background-color: white;
+}
+
+/*Contenedor de todas las películas*/
+body>div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/*Sección con los botones de las horas de cada película*/
+.horario{
+    width: 90%;
+    text-align: center;
+}
+
+/*Sección de película independiente con su nombre, su imagen y la sección de horarios*/
+.pelicula{
+    display: flex;
+    padding: 1em;
+    margin-bottom: 3em;
+    background-color: #FEE0B5;
+    border-radius: 1em;
+    border: 2px dashed #F07476;
+    margin-right: 1em;
+}
+
+/*Nombre de la película*/
+.horario>p{
+    font-family: "Caveat";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3em;
+    color: #602B2C;
+    margin-top: 0;
+    margin-left: 0.5em;
+}
+
+/*Botones de las horas*/
+.hora{
+    border: 2px solid #602B2C;
+    color: #602B2C;
+    background-color: white;
+    text-decoration: none;
+    margin-bottom: 3em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/*Sección de los botones de las horas*/
+.botones{
+    display: grid;
+    grid-template-columns: 4em 4em 4em 4em;
+    gap: 2em;
+    padding-left: 3em;
+
+}
+
+/*Media Queries*/
+@media (max-width: 1350px)
+{
+    body>div{
+        display: block;
+        width: 100%;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        gap: 2em;
+        padding-left: 3em;
+    
+    }
+}
+
+@media (max-width: 1000px)
+{
+    .botones{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        gap: 2em;
+        padding-left: 3em;
+    
+    }
+}
+
+@media (max-width: 800px)
+{
+    .botones{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 2em;
+        padding-left: 3em;
+    
+    }
+}

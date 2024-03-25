@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--Archivo HTML - Lenguaje en Español-->
+<html lang="es">
+    <!--Título, etiquetas meta y carga de ficheros externos-->
+    <head>
+        <!--Título de la página-->
+        <title>CinESI Película</title><!--Título de la Web-->
+        <meta charset="utf-8"><!--Codificación especial de todos los caracteres de idiomas-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Fuente-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+        <!--Estilos enlazados al archivo html-->
+        <link rel="stylesheet" href="estilos/plantilla.css">
+        <link rel="stylesheet" href="estilos/pelicula.css">
+
+        <!--Scripts enlazados al archivo html-->
+        <script type="text/javascript" src="scripts/fecha_pelicula.js"></script>
+        <script type="text/javascript" src="scripts/selec_pelicula.js"></script>
+    </head>
+
+    <!--Cuerpo de la página HTML-->
+    <body>
+        <!--Cabecera de la Web-->
+        <header class="encabezado">
+            <!--Logotipo de la Empresa con un hipervínculo-->
+            <a href="index.html">
+                <img src="imagenes/logotipo_simplificado.png" alt="logotipo_simplificado_ESIn" height="160">
+            </a>
+            <div> <!--Estructura de la página en bloques-->
+                <h1>CinESI</h1> <!--Cabecera de la Web-->
+                <!--Menú de la página-->
+                <nav>
+                    <a href="index.html">Inicio</a> 
+                    <a href="cartelera.html">Cartelera</a>
+                    <a href="salas.html">Conócenos</a>
+                </nav>
+            </div>
+        </header>
+        <!--Sección de la Web-->
+        <section>
+            <!--Título de la película-->
+            <section id="titulo">
+                <!--Titulo de la película a rellenar desde el script-->
+            </section>
+            <!--Presentación de la película-->
+            <section id="presentacion">
+                <!--Imagen sin src a añadir desde el script-->
+                <img id="poster" src="#" width="319">
+                <!--Vídeo de Youtube sin src a añadir desde el script-->
+                <iframe id="trailer" width="840" height="472" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <!--Sinopsis de la película-->
+            <article id="sinopsis">
+                <h2>Sinopsis:</h2>
+                <!--Sinopsis de la película a añadir desde el script-->
+            </article>
+            <!--Zona de selección de horario-->
+            <section id="selec_horario">
+                <h2 id="texto">Seleccione un horario</h2>
+                <div>
+                    <input type="date" name="fecha" id="fecha" min="2020-01-01" max="2026-12-31" aria-label="fecha"> <!--Fecha-->
+                    <section id="horario">                                      <!--Zona de horario-->
+                        <p>Mañana</p>
+                        <section id="mañana">
+                            <a href="reserva.html" class="hora"> 10:30 </a>
+                            <a href="reserva.html" class="hora"> 12:30 </a>
+                            <a href="reserva.html" class="hora"> 13:30 </a>
+                        </section>
+                        <p>Tarde</p>
+                        <section id="tarde">
+                            <a href="reserva.html" class="hora"> 15:30 </a>
+                            <a href="reserva.html" class="hora"> 18:30 </a>
+                            <a href="reserva.html" class="hora"> 20:30 </a>
+                            <a href="reserva.html" class="hora"> 21:30 </a>
+                            <a href="reserva.html" class="hora"> 22:30 </a>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </section>
+
+        <!--Pie de Página-->
+        <footer>
+            <!--Logotipo de la Empresa-->
+            <a href="index.html">
+                <img src="imagenes/logotipo_simplificado.png" alt="logotipo_simplificado_ESIn" height="300">   
+            </a>
+            <!--Area de Contacto-->
+            <div>
+                <div>
+                    <h3>Grupo CinESI y asociados 2024&copy;</h3>                                               <!--Nombre de la Empresa-->
+                    <h4>Email:</h4>                                                                           <!--Correo-->
+                    <a href="mailto:atencionalcliente@cinesi.com">atencionalcliente@cinesi.com</a>
+                    <h4>Teléfono</h4>                                                                         <!--Teléfono de contacto-->
+                    <a href="tel:+34956158746">+34 956 15 87 46</a>
+                </div>
+                <div>
+                    <h4>Ubicación:</h4>                                                                       <!--Ubicación-->
+                    <a href="https://maps.app.goo.gl/bNjSzyZyaKUn5acM7">Avda. Universidad de Cádiz, nº10 </a>    
+                    <h4>CP 11519 Puerto Real, Cádiz</h4>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+
+
+
+
+
